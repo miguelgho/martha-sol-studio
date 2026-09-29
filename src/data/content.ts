@@ -10,7 +10,7 @@ export const MARTHA_SOL_DATA = {
       "Warm, cinematic photography and film for people, brands and the moments worth remembering.",
     instagram: "https://instagram.com/marthasolstudio",
     instagramHandle: "@MARTHASOLSTUDIO",
-    whatsappNumber: "17865551234", // Reemplazar con el número real de WhatsApp de Martha
+    whatsappNumber: "13056390658", // Reemplazar con el número real de WhatsApp de Martha
     email: "contact@marthasolstudio.com",
     about: {
       headline: "Hi, I'm Martha.",

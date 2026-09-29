@@ -11,15 +11,33 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#F5EFE6] text-[#231913]">
-      {/* Navbar Minimalista */}
+      {/* Navbar con Logo y Nombre */}
+      {/* Navbar con Logo natural y Nombre */}
       <header className="sticky top-0 z-40 bg-[#F5EFE6]/90 backdrop-blur-sm border-b border-neutral-200/60 px-6 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
-          <div>
-            <span className="text-xl font-serif tracking-wider">{brand.name}</span>
-            <span className="block text-[9px] uppercase tracking-widest text-[#C48B5A]">
-              {brand.subtitle}
-            </span>
-          </div>
+          <a href="#" className="flex items-center gap-3">
+            {/* Logo en su formato original */}
+            <Image
+              src="/logo.png"
+              alt="Martha Sol Studio Logo"
+              width={120}
+              height={40}
+              className="h-10 w-auto object-contain"
+              priority
+            />
+
+            {/* Nombre y Subtítulo */}
+            <div>
+              <span className="text-xl font-serif tracking-wider">
+                {brand.name}
+              </span>
+              <span className="block text-[9px] uppercase tracking-widest text-[#C48B5A]">
+                {brand.subtitle}
+              </span>
+            </div>
+          </a>
+
+          {/* Menú de Navegación */}
           <nav className="flex items-center gap-6 text-xs uppercase tracking-widest font-medium text-neutral-700">
             <a href="#work" className="hover:text-black transition">Work</a>
             <a href="#services" className="hover:text-black transition">Services</a>
@@ -29,28 +47,41 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative h-[85vh] flex items-center justify-center text-center px-6 bg-[#231913] text-[#F5EFE6]">
-        <div className="max-w-3xl space-y-5">
+      {/* Hero Section con Imagen de Fondo */}
+      <section className="relative h-[85vh] flex items-center justify-center text-center px-6 bg-[#231913] text-[#F5EFE6] overflow-hidden">
+        {/* Imagen de fondo */}
+        <Image
+          src="/studio.png"
+          alt="Martha Sol Studio"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+
+        {/* Capa de oscurecimiento para contraste y legibilidad del texto */}
+        <div className="absolute inset-0 bg-[#231913]/65 backdrop-blur-[1px]" />
+
+        {/* Contenido sobre la imagen */}
+        <div className="relative z-10 max-w-3xl space-y-5">
           <p className="text-xs uppercase tracking-widest text-[#C48B5A] font-medium">
             {brand.location}
           </p>
           <h1 className="text-4xl sm:text-6xl font-serif font-light tracking-tight leading-tight">
             Stories in <span className="italic font-normal">light</span>, made to feel.
           </h1>
-          <p className="text-neutral-300 text-sm sm:text-base max-w-xl mx-auto font-light leading-relaxed">
+          <p className="text-neutral-200 text-sm sm:text-base max-w-xl mx-auto font-light leading-relaxed">
             {brand.description}
           </p>
           <div className="pt-6 flex justify-center gap-4">
             <a
               href="#book"
-              className="px-6 py-3 bg-[#C48B5A] text-white text-xs uppercase tracking-widest font-semibold rounded hover:bg-[#b07949] transition"
+              className="px-6 py-3 bg-[#C48B5A] text-white text-xs uppercase tracking-widest font-semibold rounded hover:bg-[#b07949] transition shadow-md"
             >
               Book Your Session
             </a>
             <a
               href="#work"
-              className="px-6 py-3 border border-[#F5EFE6]/40 text-[#F5EFE6] text-xs uppercase tracking-widest font-semibold rounded hover:bg-white/10 transition"
+              className="px-6 py-3 border border-[#F5EFE6]/50 text-[#F5EFE6] text-xs uppercase tracking-widest font-semibold rounded hover:bg-white/15 transition backdrop-blur-sm"
             >
               View Selected Work
             </a>
