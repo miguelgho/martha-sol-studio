@@ -58,7 +58,7 @@ export const SITE_CONTENT = {
         alt: "Lifestyle portrait with flowers",
       },
       {
-        src: "/images/portfolio/portfolio-editorial-seated.jpeg",
+        src: "/images/portfolio/portfolio-editorial-seated-V2.jpeg",
         alt: "Editorial portrait in a sunlit interior",
       },
       {
@@ -70,11 +70,11 @@ export const SITE_CONTENT = {
         alt: "Natural outdoor child portrait",
       },
       {
-        src: "/images/portfolio/portfolio-child-portrait-two.jpeg",
+        src: "/images/portfolio/portfolio-child-portrait-two-V2.jpeg",
         alt: "Lifestyle portrait of a young child outdoors",
       },
       {
-        src: "/images/portfolio/portfolio-headshot-bw.jpeg",
+        src: "/images/portfolio/portfolio-headshot-bw-V4.jpeg",
         alt: "Black and white male headshot",
       },
       {
@@ -361,7 +361,7 @@ export const SITE_CONTENT = {
       },
     ],
     button: "Tell us your idea",
-    image: "/images/studio/studio-space-bw-v1.png",
+    image: "/images/studio/studio-space-bw-V2.jpeg",
     imageAlt: "Black and white Martha Sol Studio lighting setup",
   },
 
