@@ -36,12 +36,12 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 text-white transition-all duration-300 ${
-        scrolled
-          ? "bg-[#AA7828]/95 backdrop-blur-[12px]"
-          : "bg-gradient-to-b from-black/60 to-transparent"
-      }`}
-    >
+  className={`fixed inset-x-0 top-0 z-50 text-white transition-all duration-300 ${
+    scrolled
+      ? "bg-[#211712]/95 backdrop-blur-[12px]"
+      : "bg-gradient-to-b from-black/60 to-transparent"
+  }`}
+>
       <nav
         className="site-wrap flex h-[88px] items-center justify-between max-[620px]:h-[72px]"
         aria-label="Primary navigation"
