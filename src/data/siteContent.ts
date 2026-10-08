@@ -374,8 +374,8 @@ export const SITE_CONTENT = {
       "My sessions are relaxed and guided, with room for real moments to unfold. Whether we’re making a headshot, celebrating a milestone or documenting a gathering, I want your photos to feel like you—and bring you back to how it felt.",
     ],
     signature: "With light, Martha",
-    image: "/images/about/martha-about-camera-V2.jpeg",
-    imageAlt: "Martha smiling with her camera in the studio",
+    image: "/images/about/martha-about-sitting.jpeg",
+    imageAlt: "Martha sitting on a stool with her camera in the studio",
   },
 
   process: {
